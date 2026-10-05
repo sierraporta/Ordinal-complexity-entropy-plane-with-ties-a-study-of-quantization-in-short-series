@@ -1,0 +1,21 @@
+Ground-truth GOP coordinates (m=4, M=75):
+               process    tie%         H           D
+      white  Delta=0.5    62.2   0.99286  7.6308e-04
+      white  Delta=1.0    89.7   0.95605  4.9833e-03
+   AR(1) phi=0.5 D=0.5    71.9   0.97998  2.3770e-03
+   AR(1) phi=0.9 D=0.5    94.6   0.85184  1.8810e-02
+   AR(1) phi=0.9 D=1.0    99.9   0.61386  1.0396e-01
+      Poisson lambda=5    58.5   0.98856  1.1970e-03
+     Poisson lambda=10    44.7   0.96330  3.9955e-03
+   logistic Delta=0.02    10.4   0.63172  7.0467e-02
+   logistic Delta=0.05    21.0   0.69325  5.3641e-02
+
+validator: white Delta=0.5 sim D=7.6308e-04 vs exact D_true=7.6502e-04
+
+AR(1) estimators on short N=300 (B=4000 reps): gap leaves a residual under persistence
+  phi  Delta      trueD       plug          U        gap   gap-true
+  0.5    0.5 2.3904e-03 5.5674e-03 2.2528e-03 2.3649e-03  -2.54e-05
+  0.9    0.5 1.8869e-02 2.0622e-02 1.7358e-02 1.7365e-02  -1.50e-03
+  0.9    1.0 1.0410e-01 9.9174e-02 9.6176e-02 9.5643e-02  -8.46e-03
+
+saved figure_R4.png/pdf

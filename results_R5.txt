@@ -1,0 +1,17 @@
+N=300, alpha=0.05. Rejection rates (should be ~0.05 when the serial null is TRUE).
+
+SIZE  (data = quantized white noise; NO serial structure, ties present):
+ Delta   tie% | naiveA 1-sided naiveA 2-sided  tie-matched B
+   0.0    0.0 |          0.066          0.056          0.062
+   0.5   62.3 |          0.000          1.000          0.048
+   1.0   89.7 |          0.000          1.000          0.052
+   1.5   98.3 |          0.000          1.000          0.062
+
+POWER (data = quantized AR(1); serial structure present) with the tie-matched null B:
+   phi  Delta   tie% |   power B
+   0.3    1.0   92.3 |     0.735
+   0.5    1.0   94.7 |     0.998
+   0.9    1.0   99.8 |     1.000
+   0.5    1.5   99.4 |     1.000
+
+saved figure_R5.png/pdf

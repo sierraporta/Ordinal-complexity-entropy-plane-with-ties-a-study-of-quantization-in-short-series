@@ -1,0 +1,21 @@
+GOP alphabet m=4: M=75 symbols (a(4)=75)
+
+R3. Quantization sweep (true values, N=4e6):
+ Delta   tie%         H           D  active patt
+  0.02    3.3   0.77329 2.56329e-02           75
+   0.1   16.0   0.85724 1.67415e-02           75
+  0.25   36.5   0.94082 6.64882e-03           75
+   0.5   62.2   0.99287 7.62043e-04           75
+  0.75   79.3   0.98931 1.23914e-03           75
+   1.0   89.7   0.95598 4.98781e-03           75
+   1.5   98.4   0.85226 2.09288e-02           75
+   2.0   99.9   0.73071 6.26321e-02           75
+   3.0  100.0   0.43993 3.20010e-01           52
+
+R2. Overlap bias at Delta=0.75 (true D=1.243357e-03), short N=200, B=8000 reps:
+  true D           = +1.243357e-03
+  plug-in  E[D]    = +6.029050e-03  bias +4.786e-03 (se 1.4e-05)
+  distinct-pairs U = +1.025797e-03  bias -2.176e-04 (se 1.4e-05)
+  gap (w=3)       = +1.240835e-03  bias -2.523e-06 (se 1.4e-05)
+
+saved sweep.npy, bias.npy
